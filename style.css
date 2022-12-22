@@ -1,0 +1,152 @@
+:root{
+    --yellow:#ffc54d;
+    --green:#53bf9d;
+    --red:crimson;
+    --white:whitesmoke;
+}
+body{
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;}
+
+.landing{
+    background-image: url("spicy\ image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:var(--white);
+}
+
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+    min-width: 120px;
+}
+
+
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+   flex: 1;
+}
+
+nav a:hover{
+    color: var(--green);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 2em;
+}
+
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.tagline2{
+    color: var(--yellow);
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button{
+    width: 20vw;
+    min-width: 100px;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+
+#menuheading,#locheading {
+   
+    text-align: center;
+    background:linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    font-size: 2.5em;
+    color: var(--red);
+    margin: 0;
+}
+
+.menu{
+    display: grid;
+    background:linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color: var(--white);
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+    color: var(--yellow);
+}
+.maincourse{
+    grid-row: span 2;
+}
+
+.locations{
+    background:linear-gradient(to right, rgb(100,100,100),rgb(53,52,52)) ;
+    color: var(--white);
+    display:flex ;
+    justify-content: center;
+}
+
+.locations h2{
+    color: var(--green);
+    margin-bottom: .8em;
+    margin-top: 0;
+}
+
+footer{
+    background-color: rgb(55,55,55);
+    color: var(--white);
+    padding: .25em 1em;
+}
+
+ .fa-solid{
+    padding-right: 5px;
+}
